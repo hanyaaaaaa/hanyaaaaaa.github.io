@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>計算機概論總整理 - hanyaaaaaasite</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="必須搞懂名詞:第四章邏輯:
+mask(遮罩)
+NOT(complementing, 取補數)
+AND（unsetting, 清除）
+OR（setting, 設定）
+XOR exclusive-or（,"> 
+    <meta name="author" content="hanya"> 
+    <link rel="alternative" href="atom.xml" title="hanyaaaaaasite" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="計算機概論總整理 - hanyaaaaaasite"/>
+    <meta name="twitter:description" content="必須搞懂名詞:第四章邏輯:
+mask(遮罩)
+NOT(complementing, 取補數)
+AND（unsetting, 清除）
+OR（setting, 設定）
+XOR exclusive-or（,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="hanyaaaaaasite"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="計算機概論總整理 - hanyaaaaaasite"/>
+    <meta property="og:description" content="必須搞懂名詞:第四章邏輯:
+mask(遮罩)
+NOT(complementing, 取補數)
+AND（unsetting, 清除）
+OR（setting, 設定）
+XOR exclusive-or（,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script>window.searchDbPath = "/search.xml";</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">hanyaaaaaasite</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">計算機概論總整理</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">計算機概論總整理</h1>
+        <div class="stuff">
+            <span>十一月 13, 2023</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E8%A8%88%E6%A6%82/" rel="tag">計概</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h2 id="必須搞懂名詞"><a href="#必須搞懂名詞" class="headerlink" title="必須搞懂名詞:"></a>必須搞懂名詞:</h2><h3 id="第四章"><a href="#第四章" class="headerlink" title="第四章"></a><em>第四章</em></h3><h4 id="邏輯"><a href="#邏輯" class="headerlink" title="邏輯:"></a>邏輯:</h4><ul>
+<li>mask(遮罩)</li>
+<li>NOT(complementing, 取補數)</li>
+<li>AND（unsetting, 清除）</li>
+<li>OR（setting, 設定）</li>
+<li>XOR exclusive-or（flipping, 互斥）</li>
+<li><h4 id="邏輯移位運算-應用於沒有正負的數值的pattern"><a href="#邏輯移位運算-應用於沒有正負的數值的pattern" class="headerlink" title="邏輯移位運算: (應用於沒有正負的數值的pattern)"></a>邏輯移位運算: (應用於沒有<em>正負</em>的數值的pattern)</h4><ol>
+<li>Logical shift 邏輯移位</li>
+<li>Logical circular shift(Rotate) 邏輯循環移位</li>
+</ol>
+</li>
+<li><h4 id="Arithmetic-shift-operations-算數移位運算-一定要是使用-two’s-complements-format格式的bits-patterns上。"><a href="#Arithmetic-shift-operations-算數移位運算-一定要是使用-two’s-complements-format格式的bits-patterns上。" class="headerlink" title="Arithmetic shift operations 算數移位運算:(一定要是使用 two’s complements format格式的bits patterns上。)"></a>Arithmetic shift operations 算數移位運算:(一定要是使用 <font color=salmon><em><strong>two’s complements format</strong></em></font>格式的bits patterns上。)</h4><ul>
+<li><p>Arithmetic right shift</p>
+<ol>
+<li>&#x2F;2 除二</li>
+<li>It is used to divide an integer by two</li>
+<li>最左邊維持一樣的數，最右捨去</li>
+</ol>
+</li>
+<li><p>Arithmetic left shift</p>
+<ol>
+<li>x2 乘二</li>
+<li>It is used to multiply and integer by two</li>
+<li>溢出的捨去，最右補0</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><h4 id="二補數的加減法："><a href="#二補數的加減法：" class="headerlink" title="二補數的加減法："></a>二補數的加減法：</h4><ul>
+<li>加法<ol>
+<li>如同一般的十進位加法</li>
+<li>直接相加就可以了</li>
+</ol>
+</li>
+<li>減法<ol>
+<li>(A+B) → (A+(-B))</li>
+<li>將B做二補數後再相加</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="第五章-主要在說三種電腦子系統，及他們怎麼溝通。"><a href="#第五章-主要在說三種電腦子系統，及他們怎麼溝通。" class="headerlink" title="第五章(主要在說三種電腦子系統，及他們怎麼溝通。)"></a><em>第五章</em>(主要在說三種電腦子系統，及他們怎麼溝通。)</h3><ul>
+<li><p>CPU: 中央處理單元</p>
+<ol>
+<li>ALU</li>
+<li>Registers<ul>
+<li>只能暫時存資料，用來協助CPU，是<font color=navy>速度最快的記憶體</font></li>
+</ul>
+</li>
+<li>Control Unit<ul>
+<li>Instruction registers <font color=navy><em>存指令 IR</em></font></li>
+<li>Program counter <font color=navy><em>程式計數器 PC</em></font></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>Main memory：主記憶體</p>
+<p>  主記憶體，由一組storage locations存儲位置組成，每一個位置都含有unique identifier(識別號）, 也稱為 address(地址)<br>  資料會以一組word(字組)存到memory裡，A word 通常以 byte 作為單位</p>
+</li>
+</ul>
+<h4 id="Memory-types"><a href="#Memory-types" class="headerlink" title="Memory types:"></a>Memory types:</h4><h5 id="記憶體型態，分為RAM-ROM，區別在於RAM可以讀寫，ROM只能讀"><a href="#記憶體型態，分為RAM-ROM，區別在於RAM可以讀寫，ROM只能讀" class="headerlink" title="記憶體型態，分為RAM, ROM，區別在於RAM可以讀寫，ROM只能讀"></a>記憶體型態，分為<font color=navy><em>RAM</em></font>, <font color=navy><em>ROM</em></font>，區別在於RAM可以讀寫，ROM只能讀</h5><ol>
+<li>RAM (Random Access Memory)<br>RAM含有揮發性，斷電後則則資訊會被清除，構成電腦中大部分的主記憶體，分為：</li>
+</ol>
+<ul>
+<li>Static RAM: 靜態隨機存取記憶體（SRAM）<ul>
+<li>用傳統正反閘保存資料，只要電源開啟，則資料保存</li>
+<li><font color=purple>不需要</font>更新記憶體位置</li>
+<li>速度較快，價格也貴</li>
+</ul>
+</li>
+<li>Dynamic RAM: 動態隨機存取記憶體（DRAM）<ul>
+<li>用電容做資料保存，但是電容會隨時間漏失電荷</li>
+<li><font color=purple>週期性</font>的更新週期性的更新記憶體單元</li>
+<li>速度較慢，價格便宜</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>ROM (Read-Only Memory)<br> 由製造商寫入，CPU只讀不寫，<font color=red>非揮發性，可用於開機程式</font>，分為：<ul>
+<li>PROM：可程式化唯讀記憶體</li>
+<li>EPROM：可抹除可程式化唯讀記憶體</li>
+<li>EEPRO：電子式可抹除可程式化唯讀記憶體</li>
+</ul>
+</li>
+</ol>
+<h3 id="記憶體階層圖表"><a href="#記憶體階層圖表" class="headerlink" title="記憶體階層圖表"></a>記憶體階層圖表</h3><p><img src="/img/2023-11-13%20155556.jpg"></p>
+<ul>
+<li>I&#x2F;O: 輸入&#x2F;輸出<br>  與外面連結的端口，還有外部儲存設備，分為<font color=purple>non-storage、storage</font><ul>
+<li>Non-storage device:<ul>
+<li>鍵盤、螢幕、滑鼠等等</li>
+</ul>
+</li>
+<li>Storage device:<ul>
+<li>非揮發性</li>
+<li>有時被稱為auxiliary storage(輔助記憶體）</li>
+<li>有<font color=purple>magnetic磁性、optical</font>光學兩種</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="/img/%E9%9D%A2%202023-11-13%20160914.jpg"></p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
