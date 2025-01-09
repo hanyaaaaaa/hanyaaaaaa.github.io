@@ -13,8 +13,7 @@
     <meta name="description" content="遞迴
 支點切割
 
-https://zerojudge.tw/ShowProblem?problemid=f638寫了兩個小時還是錯的決定先休息，放這裡之後寫
-12345678910111213141,"> 
+https://zerojudge.tw/ShowProblem?problemid=f638寫了兩個小時還是錯的決定先休息，放這裡之後寫，寫了兩個小時發現我沒看完題目放一個正解網,"> 
     <meta name="author" content="hanya"> 
     <link rel="alternative" href="atom.xml" title="hanyaaaaaasite" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -26,8 +25,7 @@ https://zerojudge.tw/ShowProblem?problemid=f638寫了兩個小時還是錯的決
     <meta name="twitter:description" content="遞迴
 支點切割
 
-https://zerojudge.tw/ShowProblem?problemid=f638寫了兩個小時還是錯的決定先休息，放這裡之後寫
-12345678910111213141,"/>
+https://zerojudge.tw/ShowProblem?problemid=f638寫了兩個小時還是錯的決定先休息，放這裡之後寫，寫了兩個小時發現我沒看完題目放一個正解網,"/>
     
     
     
@@ -38,8 +36,7 @@ https://zerojudge.tw/ShowProblem?problemid=f638寫了兩個小時還是錯的決
     <meta property="og:description" content="遞迴
 支點切割
 
-https://zerojudge.tw/ShowProblem?problemid=f638寫了兩個小時還是錯的決定先休息，放這裡之後寫
-12345678910111213141,"/>
+https://zerojudge.tw/ShowProblem?problemid=f638寫了兩個小時還是錯的決定先休息，放這裡之後寫，寫了兩個小時發現我沒看完題目放一個正解網,"/>
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
@@ -84,7 +81,7 @@ https://zerojudge.tw/ShowProblem?problemid=f638寫了兩個小時還是錯的決
             <h1 id="遞迴"><a href="#遞迴" class="headerlink" title="遞迴"></a>遞迴</h1><ul>
 <li>支點切割</li>
 </ul>
-<p><a target="_blank" rel="noopener" href="https://zerojudge.tw/ShowProblem?problemid=f638">https://zerojudge.tw/ShowProblem?problemid=f638</a><br>寫了兩個小時還是錯的決定先休息，放這裡之後寫</p>
+<p><a target="_blank" rel="noopener" href="https://zerojudge.tw/ShowProblem?problemid=f638">https://zerojudge.tw/ShowProblem?problemid=f638</a><br>寫了兩個小時還是錯的決定先休息，放這裡之後寫，寫了兩個小時發現我沒看完題目<br>放一個正解網址<a target="_blank" rel="noopener" href="https://sites.google.com/view/zsgititit/home/jin-jiec-cheng-shi-she-ji/apcs201802%E7%AC%AC3%E9%A1%8C%E6%94%AF%E9%BB%9E%E5%88%87%E5%89%B2">https://sites.google.com/view/zsgititit/home/jin-jiec-cheng-shi-she-ji/apcs201802%E7%AC%AC3%E9%A1%8C%E6%94%AF%E9%BB%9E%E5%88%87%E5%89%B2</a></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;bits/stdc++.h&gt;</span><br><span class="line">typedef long long LL;</span><br><span class="line">using namespace std;</span><br><span class="line">LL s[500100]=&#123;&#125;;</span><br><span class="line">int T=0;</span><br><span class="line">/*</span><br><span class="line">5 1</span><br><span class="line">1 2 3 4 100</span><br><span class="line">*/</span><br><span class="line">LL cut(int left,int right,int boundd)&#123;</span><br><span class="line">    if((right-left)&lt;=1 ||(boundd)&gt;=T)&#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    int k=left+1;</span><br><span class="line">    LL low=LLONG_MAX;</span><br><span class="line">    //int low=abs((s[left]-s[left-1])-(s[right]-s[left+1]));//差值</span><br><span class="line">    //cout&lt;&lt;low&lt;&lt;&quot; low \n&quot;;</span><br><span class="line">    for(int i=left+1;i&lt;=right-1;i++)&#123;</span><br><span class="line">        if(abs((s[i-1]-s[left-1])-(s[right]-s[i]))&lt;low)&#123;</span><br><span class="line">            k=i;</span><br><span class="line">            low=abs((s[i-1]-s[left-1])-(s[right]-s[i]));</span><br><span class="line">            //cout&lt;&lt;low&lt;&lt;&quot; low &quot;&lt;&lt;k&lt;&lt;&quot; k \n&quot;;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    boundd++;</span><br><span class="line">    return s[k]-s[k-1]+cut(left,k-1,boundd)+cut(k+1,right,boundd);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);</span><br><span class="line">    int n;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    cin&gt;&gt;T;</span><br><span class="line">    LL g;</span><br><span class="line">    s[0]=0;</span><br><span class="line">    for(int i=1;i&lt;=n;i++)&#123;</span><br><span class="line">        cin&gt;&gt;g;</span><br><span class="line">        s[i]=g+s[i-1];</span><br><span class="line">    &#125;</span><br><span class="line">    /*for(int i=0;i&lt;=n;i++)&#123;</span><br><span class="line">        cout&lt;&lt;s[i]&lt;&lt;&#x27; &#x27;;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;&#x27;\n&#x27;;*/</span><br><span class="line">    cout&lt;&lt;cut(1,n,0);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
