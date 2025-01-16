@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ap325第2章剩下例題 - hanyaaaaaasite</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="2-6set寫法https://judge.tcirc.tw/problem/d015
+1234567891011121314151617181920212223242526272829#inclu,"> 
+    <meta name="author" content="hanya"> 
+    <link rel="alternative" href="atom.xml" title="hanyaaaaaasite" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="ap325第2章剩下例題 - hanyaaaaaasite"/>
+    <meta name="twitter:description" content="2-6set寫法https://judge.tcirc.tw/problem/d015
+1234567891011121314151617181920212223242526272829#inclu,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="hanyaaaaaasite"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="ap325第2章剩下例題 - hanyaaaaaasite"/>
+    <meta property="og:description" content="2-6set寫法https://judge.tcirc.tw/problem/d015
+1234567891011121314151617181920212223242526272829#inclu,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script>window.searchDbPath = "/search.xml";</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">hanyaaaaaasite</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">ap325第2章剩下例題</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">ap325第2章剩下例題</h1>
+        <div class="stuff">
+            <span>一月 16, 2025</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/AP325/" rel="tag">AP325</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h3 id="2-6set寫法"><a href="#2-6set寫法" class="headerlink" title="2-6set寫法"></a>2-6set寫法</h3><p><a target="_blank" rel="noopener" href="https://judge.tcirc.tw/problem/d015">https://judge.tcirc.tw/problem/d015</a></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> LL;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> m,n;</span><br><span class="line">    LL k;</span><br><span class="line">    cin&gt;&gt;m&gt;&gt;n&gt;&gt;k;</span><br><span class="line">    set&lt;LL&gt;s;</span><br><span class="line">    <span class="type">int</span> A[m];</span><br><span class="line">    LL x;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;m;i++)&#123;</span><br><span class="line">        cin&gt;&gt;A[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        cin&gt;&gt;x;</span><br><span class="line">        s.<span class="built_in">insert</span>(x);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">sort</span>(A,A+m);</span><br><span class="line">    <span class="type">int</span> total=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;m;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(s.<span class="built_in">find</span>(k-A[i])!=s.<span class="built_in">end</span>())&#123; <span class="comment">//s.find(k-A[i])會返回找到他的位置</span></span><br><span class="line">            total++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;total;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-7互補團隊"><a href="#2-7互補團隊" class="headerlink" title="2-7互補團隊"></a>2-7互補團隊</h3><p><a target="_blank" rel="noopener" href="https://judge.tcirc.tw/problem/d016">https://judge.tcirc.tw/problem/d016</a><br>自己練習，tle的答案，感覺寫得很亂，進步空間很大</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> LL;</span><br><span class="line">LL total=<span class="number">0</span>;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line">set&lt;pair&lt;<span class="type">int</span>,<span class="type">int</span>&gt;&gt; sss;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">recursion</span><span class="params">(string s[],<span class="type">int</span> m,map&lt;<span class="type">char</span>,<span class="type">int</span>&gt; ma,<span class="type">int</span> now,<span class="type">int</span> deep)</span></span>&#123;</span><br><span class="line">    set&lt;<span class="type">char</span>&gt; se;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;s[now].<span class="built_in">size</span>();i++)&#123;</span><br><span class="line">        se.<span class="built_in">insert</span>(s[now][i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> k:se)&#123;</span><br><span class="line">        ma[k]++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(deep==<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="type">bool</span> valid=<span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">char</span> ch=<span class="string">&#x27;A&#x27;</span>;ch&lt;=<span class="string">&#x27;A&#x27;</span>+m<span class="number">-1</span> &amp;&amp; ch&lt;=<span class="string">&#x27;Z&#x27;</span>;ch++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(ma[ch]&lt;=<span class="number">0</span>|| ma[ch]&gt;=<span class="number">2</span>)&#123;</span><br><span class="line">                valid=<span class="literal">false</span>;</span><br><span class="line">                <span class="keyword">return</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(valid)&#123;</span><br><span class="line">            total++;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(i!=now &amp;&amp; sss.<span class="built_in">find</span>(&#123;<span class="built_in">min</span>(i,now),<span class="built_in">max</span>(i,now)&#125;)==sss.<span class="built_in">end</span>())&#123;</span><br><span class="line">            sss.<span class="built_in">insert</span>(&#123;<span class="built_in">min</span>(i,now),<span class="built_in">max</span>(i,now)&#125;);</span><br><span class="line">            <span class="built_in">recursion</span>(s,m,ma,i,<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> m;</span><br><span class="line">    cin&gt;&gt;m&gt;&gt;n;</span><br><span class="line">    map&lt;<span class="type">char</span>,<span class="type">int</span>&gt; ma;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">char</span> ch=<span class="string">&#x27;A&#x27;</span>;ch&lt;=<span class="string">&#x27;Z&#x27;</span> ;ch++)&#123;</span><br><span class="line">        ma[ch]=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    string str[n];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        cin&gt;&gt;str[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;     </span><br><span class="line">        <span class="built_in">recursion</span>(str,m,ma,i,<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;total;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;   </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>看提示寫的:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> k=<span class="number">1</span>;</span><br><span class="line"><span class="type">int</span> m,n;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">    cin&gt;&gt;m&gt;&gt;n;</span><br><span class="line">    k=(<span class="number">1</span>&lt;&lt;m)<span class="number">-1</span>;</span><br><span class="line">    <span class="comment">//cout&lt;&lt;k&lt;&lt;&#x27;\n&#x27;;</span></span><br><span class="line">    string s[n];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        cin&gt;&gt;s[i];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    set&lt;<span class="type">int</span>&gt; se;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        <span class="type">int</span> team=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;s[i].<span class="built_in">size</span>();j++)&#123;</span><br><span class="line">            <span class="comment">/*if(s[i][j]==&#x27;A&#x27;)&#123;</span></span><br><span class="line"><span class="comment">                team|=1;</span></span><br><span class="line"><span class="comment">            &#125;*/</span></span><br><span class="line">            team |=(<span class="number">1</span>&lt;&lt;(s[i][j]-<span class="string">&#x27;A&#x27;</span>));</span><br><span class="line">        &#125;</span><br><span class="line">        se.<span class="built_in">insert</span>(team);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> total=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> t:se)&#123;</span><br><span class="line">        <span class="keyword">if</span>(se.<span class="built_in">find</span>(k-t)!=se.<span class="built_in">end</span>())&#123;</span><br><span class="line">            total++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;total/<span class="number">2</span>; <span class="comment">//由這邊可以發現這題還可以優化，因為total被計算兩次</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+        </div>
+        
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
