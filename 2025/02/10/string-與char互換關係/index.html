@@ -81,6 +81,12 @@
 
 <p>數字轉字串:</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> num = <span class="number">123</span>;</span><br><span class="line">std::string str = std::<span class="built_in">to_string</span>(num);  <span class="comment">// 將整數轉換為字符串</span></span><br><span class="line">std::cout &lt;&lt; str &lt;&lt; std::endl;  <span class="comment">// 輸出：123</span></span><br></pre></td></tr></table></figure>
+<p>判斷char為數字或是英文:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(ch[i]&gt;=<span class="string">&#x27;0&#x27;</span>&amp;&amp; ch[i]&lt;=<span class="string">&#x27;9&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>((ch[i]&gt;=<span class="string">&#x27;a&#x27;</span>&amp;&amp; ch[i]&lt;=<span class="string">&#x27;z&#x27;</span>)||(ch[i]&gt;=<span class="string">&#x27;A&#x27;</span>&amp;&amp; ch[i]&lt;=<span class="string">&#x27;Z&#x27;</span>))</span><br><span class="line">                </span><br></pre></td></tr></table></figure>
+<p>字串反轉:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">reverse</span>(ans.<span class="built_in">begin</span>(),ans.<span class="built_in">end</span>());</span><br></pre></td></tr></table></figure>
+<p>(<code>array</code>也可以反轉)</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">reverse</span>(arr.<span class="built_in">begin</span>(), arr.<span class="built_in">end</span>());</span><br></pre></td></tr></table></figure>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
                 <source type="audio/mpeg" src="">
