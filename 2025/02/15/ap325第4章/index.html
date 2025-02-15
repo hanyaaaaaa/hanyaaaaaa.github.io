@@ -5,12 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>hanyaaaaaasite</title>
+    <title>ap325第4章 - hanyaaaaaasite</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    
+    <meta name="description" content="貪心演算法(Greedy algorithm)特性:
+算法由一連串決定組成(由大到小逐一考慮各種代幣的數量)，每次考慮當前最好決定(能換盡量換)，選擇後就不再更改。 
+算法的正確性必須經過證明，內容,"> 
     <meta name="author" content="hanya"> 
     <link rel="alternative" href="atom.xml" title="hanyaaaaaasite" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -18,16 +20,20 @@
     
     
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="hanyaaaaaasite"/>
-    
+    <meta name="twitter:title" content="ap325第4章 - hanyaaaaaasite"/>
+    <meta name="twitter:description" content="貪心演算法(Greedy algorithm)特性:
+算法由一連串決定組成(由大到小逐一考慮各種代幣的數量)，每次考慮當前最好決定(能換盡量換)，選擇後就不再更改。 
+算法的正確性必須經過證明，內容,"/>
     
     
     
     
     <meta property="og:site_name" content="hanyaaaaaasite"/>
     <meta property="og:type" content="object"/>
-    <meta property="og:title" content="hanyaaaaaasite"/>
-    
+    <meta property="og:title" content="ap325第4章 - hanyaaaaaasite"/>
+    <meta property="og:description" content="貪心演算法(Greedy algorithm)特性:
+算法由一連串決定組成(由大到小逐一考慮各種代幣的數量)，每次考慮當前最好決定(能換盡量換)，選擇後就不再更改。 
+算法的正確性必須經過證明，內容,"/>
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
@@ -40,27 +46,81 @@
 <body class="loading">
     <span id="config-title" style="display:none">hanyaaaaaasite</span>
     <div id="loader"></div>
-    <div id="single" class="page">
-    <div id="top">
-        <a class="iconfont icon-left image-icon" href="javascript:history.back()"></a>
-    </div>
-    <div class="section">
-        <div class="article">
-            <div class="main">
-                <div class="content">
-                
-                    <div class="set">
-  <h2>分类</h2>
-  <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%B8%E8%A1%93/">學術</a><span class="category-list-count">20</span></li></ul>
-</div>
-
-                
-                </div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">ap325第4章</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
             </div>
+            <div id="qr"></div>
         </div>
     </div>
+    <div class="scrollbar"></div>
 </div>
 
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">ap325第4章</h1>
+        <div class="stuff">
+            <span>二月 15, 2025</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/AP325/" rel="tag">AP325</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h2 id="貪心演算法-Greedy-algorithm"><a href="#貪心演算法-Greedy-algorithm" class="headerlink" title="貪心演算法(Greedy algorithm)"></a>貪心演算法(Greedy algorithm)</h2><h5 id="特性"><a href="#特性" class="headerlink" title="特性:"></a>特性:</h5><ul>
+<li>算法由一連串決定組成(由大到小逐一考慮各種代幣的數量)，每次考慮當前最好<br>決定(能換盡量換)，選擇後就不再更改。 </li>
+<li>算法的正確性必須經過證明，內容就是要證明所下的決定是對的，也就是一定有一<br>個最佳解包含了貪心法所做的決定，而證明的方法通常都是用換的：假設有一個最<br>佳解跟貪心法做的決定不一樣，那麼，我們可以換成一個與貪心法一樣的決定，而<br>解會更好，或至少不會變差。</li>
+</ul>
+<h2 id="優先佇列-priority-queue"><a href="#優先佇列-priority-queue" class="headerlink" title="優先佇列(priority_queue)"></a>優先佇列(priority_queue)</h2><ul>
+<li>top會是最大值</li>
+<li>如果要讓top為最小值可以加上負號讓大小關係反轉</li>
+<li><code>priority_queue&lt;pair&lt;int,int&gt;&gt; pq;</code> 會先比對pair的first</li>
+<li>加入新元素(push)，O(log(n))</li>
+<li>查詢最大值(top)，O(1)</li>
+<li>刪除最大值(pop)，O(log(n))</li>
+<li>檢查是否為空(empty)，O(1)</li>
+<li>比set快兩倍以上!!!</li>
+</ul>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+        </div>
+        
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
 </body>
 
 
