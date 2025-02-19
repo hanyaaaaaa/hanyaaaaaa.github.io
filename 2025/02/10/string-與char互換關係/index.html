@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>string 與char互換關係 - hanyaaaaaasite</title>
+    <title>C++ string 與char互換關係 - hanyaaaaaasite</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
@@ -19,7 +19,7 @@
     
     
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="string 與char互換關係 - hanyaaaaaasite"/>
+    <meta name="twitter:title" content="C++ string 與char互換關係 - hanyaaaaaasite"/>
     <meta name="twitter:description" content="char陣列&amp;lt;&amp;#x3D;&amp;gt;C-style 字符串char陣列轉string
 123char arr[] = &amp;quot;Hello&amp;quot;;std::string str = ar,"/>
     
@@ -28,7 +28,7 @@
     
     <meta property="og:site_name" content="hanyaaaaaasite"/>
     <meta property="og:type" content="object"/>
-    <meta property="og:title" content="string 與char互換關係 - hanyaaaaaasite"/>
+    <meta property="og:title" content="C++ string 與char互換關係 - hanyaaaaaasite"/>
     <meta property="og:description" content="char陣列&amp;lt;&amp;#x3D;&amp;gt;C-style 字符串char陣列轉string
 123char arr[] = &amp;quot;Hello&amp;quot;;std::string str = ar,"/>
     
@@ -48,7 +48,7 @@
     <div class="bar" style="width: 0;"></div>
     <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
     <div title="播放/暂停" class="iconfont icon-play"></div>
-    <h3 class="subtitle">string 與char互換關係</h3>
+    <h3 class="subtitle">C++ string 與char互換關係</h3>
     <div class="social">
         <div>
             <div class="share">
@@ -63,7 +63,7 @@
     <div class="section">
         <div class="article">
     <div class='main'>
-        <h1 class="title">string 與char互換關係</h1>
+        <h1 class="title">C++ string 與char互換關係</h1>
         <div class="stuff">
             <span>二月 10, 2025</span>
             
@@ -78,7 +78,8 @@
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">std::string str = <span class="string">&quot;Hello, World!&quot;</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">char</span> ch : str) &#123;</span><br><span class="line">    std::cout &lt;&lt; ch &lt;&lt; <span class="string">&#x27; &#x27;</span>;  <span class="comment">// 輸出每個字符</span></span><br><span class="line">&#125;</span><br><span class="line">std::cout &lt;&lt; std::endl;</span><br></pre></td></tr></table></figure>
 <p><code>C-style</code> 字符串函數:<br>計算長度</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">char</span>* str = <span class="string">&quot;Hello&quot;</span>;</span><br><span class="line">std::cout &lt;&lt; <span class="built_in">strlen</span>(str) &lt;&lt; std::endl;  <span class="comment">// 輸出：5</span></span><br></pre></td></tr></table></figure>
-
+<p>字串轉述字:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">string s;</span><br><span class="line"><span class="type">int</span> a=<span class="built_in">stoi</span>(s);</span><br></pre></td></tr></table></figure>
 <p>數字轉字串:</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> num = <span class="number">123</span>;</span><br><span class="line">std::string str = std::<span class="built_in">to_string</span>(num);  <span class="comment">// 將整數轉換為字符串</span></span><br><span class="line">std::cout &lt;&lt; str &lt;&lt; std::endl;  <span class="comment">// 輸出：123</span></span><br></pre></td></tr></table></figure>
 <p>判斷char為數字或是英文:</p>
