@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>data stucture第一章 - hanyaaaaaasite</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="Algorithm定義須滿足下列五個criteria(標準要求)
+
+Input(至少提供&amp;gt;&amp;#x3D;0個輸入資料)
+Output(至少提供&amp;gt;&amp;#x3D;1個輸出結果)
+Definite,"> 
+    <meta name="author" content="hanya"> 
+    <link rel="alternative" href="atom.xml" title="hanyaaaaaasite" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="data stucture第一章 - hanyaaaaaasite"/>
+    <meta name="twitter:description" content="Algorithm定義須滿足下列五個criteria(標準要求)
+
+Input(至少提供&amp;gt;&amp;#x3D;0個輸入資料)
+Output(至少提供&amp;gt;&amp;#x3D;1個輸出結果)
+Definite,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="hanyaaaaaasite"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="data stucture第一章 - hanyaaaaaasite"/>
+    <meta property="og:description" content="Algorithm定義須滿足下列五個criteria(標準要求)
+
+Input(至少提供&amp;gt;&amp;#x3D;0個輸入資料)
+Output(至少提供&amp;gt;&amp;#x3D;1個輸出結果)
+Definite,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script>window.searchDbPath = "/search.xml";</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">hanyaaaaaasite</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">data stucture第一章</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">data stucture第一章</h1>
+        <div class="stuff">
+            <span>三月 12, 2025</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h3 id="Algorithm定義"><a href="#Algorithm定義" class="headerlink" title="Algorithm定義"></a>Algorithm定義</h3><p>須滿足下列五個criteria(標準要求)</p>
+<ul>
+<li>Input(至少提供&gt;&#x3D;0個輸入資料)</li>
+<li>Output(至少提供&gt;&#x3D;1個輸出結果)</li>
+<li>Definiteness明確性(每個指令敘述必須是clear且unambiguous)</li>
+<li>Finiteness有限性(Algorithm在執行有限steps後必須能夠終止)(program不具有限性)</li>
+<li>Effectiveness有效性(每個指令敘述夠基本，即可被人用紙、筆追蹤&#x2F;執行)<br>會考哪一個不是定義:<br>ex correctness?</li>
+</ul>
+<h3 id="Recursion"><a href="#Recursion" class="headerlink" title="Recursion"></a>Recursion</h3><ul>
+<li>Direct Recursion直接(包含self-calling)</li>
+<li>Indirect recursion間接ex: A-&gt;B-&gt;C-&gt;A </li>
+<li>Tail recursion 尾端遞迴 (是Direct recursion的一種，即recursion call之下一個可執行敘述為return&#x2F;end)<br>ex <code>return n*rec();//非尾端遞迴</code><br> <code>return rec();//為尾端遞迴</code></li>
+</ul>
+<h3 id="Recursion-vs-Iteration-Non-Recursion"><a href="#Recursion-vs-Iteration-Non-Recursion" class="headerlink" title="Recursion vs. Iteration(Non-Recursion)"></a>Recursion vs. Iteration(Non-Recursion)</h3><ul>
+<li>任何問題的解決必存在這兩種形式的演算法</li>
+<li>遞迴-&gt;非遞迴(有標準SOP)</li>
+<li>非遞迴-&gt;遞迴(無)</li>
+</ul>
+<h3 id="解題關鍵-記住數學上Recursion-definition"><a href="#解題關鍵-記住數學上Recursion-definition" class="headerlink" title="解題關鍵:記住數學上Recursion definition"></a>解題關鍵:記住數學上Recursion definition</h3><h3 id="輾轉相除法"><a href="#輾轉相除法" class="headerlink" title="輾轉相除法"></a>輾轉相除法</h3><p>gcd(A,B)&#x3D;B,if(A %B)&#x3D;0<br>gcd(A,B)&#x3D;gcd(B,A %B),otherwise</p>
+<h3 id="Ackerman-Function-A-m-n"><a href="#Ackerman-Function-A-m-n" class="headerlink" title="Ackerman Function A(m,n)"></a>Ackerman Function A(m,n)</h3><p>很難算</p>
+<h3 id="快速冪-O-log-n"><a href="#快速冪-O-log-n" class="headerlink" title="快速冪!!!O(log(n))"></a>快速冪!!!O(log(n))</h3><p>數學rec:<br>x^n&#x3D;1* x^(n&#x2F;2)<em>x^(n&#x2F;2),if n&#x3D;even<br>x^n&#x3D;x</em> x^(n&#x2F;2)*x^(n&#x2F;2),if n&#x3D;odd<br>台大解:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">exp</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> n)</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> f;</span><br><span class="line">    <span class="keyword">if</span>(n%<span class="number">2</span>==<span class="number">0</span>)f=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> f=x;</span><br><span class="line">    <span class="keyword">if</span>(n&lt;<span class="number">2</span>) <span class="keyword">return</span> f;</span><br><span class="line">    <span class="keyword">return</span> f*<span class="built_in">exp</span>(x*x,n/<span class="number">2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>自己寫比較好懂:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">exp</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">1</span>) <span class="keyword">return</span> x;</span><br><span class="line">    <span class="keyword">if</span>(n%<span class="number">2</span>) <span class="keyword">return</span> x*<span class="built_in">exp</span>(x*x,n/<span class="number">2</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">exp</span>(x*x,n/<span class="number">2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Hanoi河內塔"><a href="#Hanoi河內塔" class="headerlink" title="Hanoi河內塔"></a>Hanoi河內塔</h3><p>遞迴核心概念:把問題縮小<br>以這題為例 先拿n-1個disk然後再拿最後第n個<br>設有A,B,C柱<br>step1. n-1 disk到B柱<br>step2. 第n個disk放到C柱<br>step3. n-1 disk放到C柱<br>用程式實現:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Hanoi</span>(n,from,to,Aux) <span class="comment">// (最後面的是暫存)</span></span><br><span class="line">step1. <span class="built_in">Hanoi</span>(n<span class="number">-1</span>,from,Aux,to); <span class="comment">//先移動n-1個盤子</span></span><br><span class="line">step2. move disk n from <span class="string">&quot;from&quot;</span> to <span class="string">&quot;to&quot;</span></span><br><span class="line">step3. <span class="built_in">Hanoi</span>(n<span class="number">-1</span>,Aux,to,from); <span class="comment">//再把n-1個盤子移動到to</span></span><br></pre></td></tr></table></figure>
+<p>遞迴:T(n)&#x3D;T(n-1)+1+T(n-1)從左至右就是step1~3<br>O(n)&#x3D;2^n-1</p>
+<h3 id="Print-all-permutation-of-n-data"><a href="#Print-all-permutation-of-n-data" class="headerlink" title="Print all permutation of n data"></a>Print all permutation of n data</h3><p>觀念:<br>perm(a,b,c)&#x3D;’a’+perm(b,c)+’b’+perm(a,c)+’c’+perm(a,b)<br>輪流作為head後面接剩下資料之perm</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">perm</span><span class="params">(<span class="type">char</span> s[],<span class="type">int</span> i,<span class="type">int</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">        cout&lt;&lt;s[j]&lt;&lt;<span class="string">&#x27; &#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;<span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">    <span class="type">int</span> j,temp;</span><br><span class="line">    <span class="keyword">if</span>(i==n)&#123;</span><br><span class="line">        <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">            cout&lt;&lt;s[j];</span><br><span class="line">        &#125;</span><br><span class="line">        cout&lt;&lt;<span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(j=i;j&lt;=n;j++)&#123;</span><br><span class="line">            <span class="built_in">swap</span>(s[i],s[j]);</span><br><span class="line">            <span class="built_in">perm</span>(s,i+<span class="number">1</span>,n);</span><br><span class="line">            <span class="built_in">swap</span>(s[i],s[j]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">char</span> s[<span class="number">100</span>];</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        cin&gt;&gt;s[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">perm</span>(s,<span class="number">1</span>,n);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>缺點是資料並不會依輸入的字典序排列</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+        </div>
+        
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
